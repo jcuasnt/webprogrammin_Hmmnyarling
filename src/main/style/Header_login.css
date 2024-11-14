@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'PFStardust';
+    src: url('../asset/PF스타더스트 3.0 S.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, button, input, select, textarea {
+    font-family: 'PFStardust', sans-serif;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 5px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 2px solid;
+    border-color: #6B2CAF;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 80px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-right > div {
+    font-size: 18px;
+    color: #333;
+}
+
+.bookmark {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    color: #6B2CAF;
+}
+
+.bookmark img {
+    height: 25px;
+    width: 25px;
+}
+
+.login_btn {
+    font-size: 16px;
+    color: white;
+    border: none;
+    background-color: #6B2CAF;
+    border-radius: 100px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.login_btn:hover {
+    color: #E6E6FA;
+    background-color: #5A2390;
+}

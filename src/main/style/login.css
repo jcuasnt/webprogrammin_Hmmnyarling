@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'PFStardust';
+    src: url('../asset/PF스타더스트 3.0 S.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, button, input, select, textarea {
+    font-family: 'PFStardust', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    margin-top: 50px;  
+    margin-bottom: 50px;  
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+input[type="text"],
+input[type="password"]{
+    width: 100%;
+    padding: 20px 15px 10px 15px;
+    font-size: 18px;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    box-sizing: border-box;
+    height: 60px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus{
+    outline: none;
+    background-color: #e0e0e0;
+}
+
+input::placeholder {
+    color: #888;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+label {
+    position: absolute;
+    top: 8px;
+    left: 15px;
+    font-size: 10px;
+    color: #333;
+    pointer-events: none;
+    line-height: 20px;
+}
+
+input[type="submit"] {
+    width: 250px;
+    padding: 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #6B2CAF;
+    border: none;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #5a32a1;
+}
+
+/* login.css */
+.signup-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.signup-link a {
+    font-size: 14px;
+    color: #6B2CAF;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+    color: #5A2390;
+}

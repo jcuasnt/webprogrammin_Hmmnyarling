@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'PFStardust';
+    src: url('../asset/PF스타더스트 3.0 S.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, button, input, select, textarea {
+    font-family: 'PFStardust', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.side-menu {
+    position: fixed;
+    top: 50px; /* 화면 상단에서의 위치 */
+    left: 10px; /* 화면 왼쪽에서의 위치 */
+    width: 120px;
+    background-color: #6B2CAF;
+    padding: 10px 0;
+}
+
+.menu-item {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.menu-item:hover {
+    background-color: #5A2390; /* 마우스 오버 시 배경색 변경 */
+}
