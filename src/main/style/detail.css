@@ -1,0 +1,248 @@
+@font-face {
+    font-family: 'PFStardust';
+    src: url('../asset/font/PF스타더스트 3.0 S.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, button, input, select, textarea {
+    font-family: 'PFStardust', sans-serif;
+}
+
+body {
+	margin-left:2%;
+	margin-right:2%;
+	min-width:600px;
+ 	overflow-x: hidden;   
+}
+
+.box1 {
+    min-height: 300px;  
+    height: auto;  
+    background-color: #f5f5f5;
+    border: none;
+    position: relative; 
+    padding-bottom: 10px;
+    box-sizing: border-box; 
+}
+
+
+.boardgame-img {
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.name {
+    font-size: 30px;
+    position: relative;
+    top: 20px;
+    left: 270px; 
+}
+
+.number {
+    font-size: 18px;
+    position: absolute;
+    top: 80px; 
+    left: 280px;
+}
+
+.time {
+    font-size: 18px;
+    position: absolute;
+    top: 120px; 
+    left: 280px;
+}
+
+.star {
+    position: absolute;
+    top: 160px;
+    left: 280px;
+}
+
+.star1, .star2, .star3 {
+    width: 20px;
+    height: 20px;
+}
+
+.star1 {
+    opacity: 1;
+}
+
+.star2 {
+    opacity: 1;
+}
+
+.star3 {
+    opacity: 1;
+}
+
+.tag {
+    display: flex;
+    position: absolute;
+    top: 200px; 
+    left: 280px;
+    gap: 15px; 
+}
+
+.tag1, .tag2, .tag3, .tag4 {
+    width: 70px;    
+    height: 25px;   
+    background-color: #ddd;
+    border-radius: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #333;
+}
+
+.heart-button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.heart-button .heart-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.link {
+    font-size: 15px;
+    position: absolute;
+    top: 260px;
+    left: 30px; 
+}
+
+.description {
+    font-size: 15px;
+    line-height: 1.6;
+    padding-top: 250px;  
+    padding-bottom: 10px; 
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.subhead {
+	margin-top:30px;
+}
+
+.box2 {
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-right:10px;
+  padding-top:10px;
+  background-color: #f5f5f5;
+}
+
+#mytip {
+  width: 92%;
+  height: 100px;           
+  font-size: 15px;         
+  padding: 10px;           
+  border: none;            
+  resize: none;            
+  overflow-wrap: break-word;
+  background-color: transparent;
+}
+
+#mytip:focus{
+	outline:none;
+}
+
+form {
+  display: flex;
+  flex-direction: row;  
+  justify-content: flex-start; 
+  align-items: center;  
+}
+
+.submit-button {
+  width: 80px;
+  height: 60px;
+  outline: none;
+  margin-left: 15px;     
+  margin-right:15px;    
+  background-color: #6f42c1;
+  cursor: pointer;    
+  color: white;      
+  border-radius: 10px;
+  border: none; 
+}
+
+.submit-button:focus {
+  outline: none;
+}
+
+.submit-button:hover {
+  background-color: #5a32a1;
+}
+
+.subhead {
+	margin-top:30px;
+}
+
+.box3{
+	padding-top:20px;
+	padding-bottom:20px;
+	margin-top:10px;
+    height: auto;  
+    background-color: #f5f5f5;
+    border: none;
+    position: relative; 
+    box-sizing: border-box; 	
+
+}
+.tipbox {
+	background-color:transparent;
+    display: flex;
+    flex-direction: row;  
+    justify-content: flex-start; 
+    align-items: center;  
+}
+
+.likebox,
+.tipcontent{
+	margin-left:20px;
+}
+
+.up-button img,
+.down-button img{
+    width: 25px;  /* 이미지의 너비를 줄임 */
+    height: 25px; /* 이미지의 높이를 줄임 */
+}
+
+
+.up-button ,
+.down-button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.likes{
+	margin-left:13px;
+	font-size:18px;
+}
+
+.nickname{
+	font-size:18px;
+	margin-bottom:20px;
+}
+hr{
+	margin-top:10px;
+	margin-bottom:10px;
+	width:97%;
+}
+
+
+
+
+
