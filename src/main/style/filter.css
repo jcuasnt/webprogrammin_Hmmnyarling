@@ -30,6 +30,7 @@ body {
 .search-bar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 20px;
 }
 
@@ -39,20 +40,26 @@ body {
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 40px;
+    margin-right: 10px; /* 버튼과 간격 */
 }
 
 .search-bar button {
     width: 50px;
-    margin-left: 10px;
+    margin-left: 5px; /* 버튼 간격 */
     border: none;
     background-color: white;
     cursor: pointer;
     transition: background-color 0.2s;
 }
 
-.search-bar img{
+.search-bar img {
     width: 25px;
     height: 25px;
+}
+
+.search-bar .right-buttons {
+    display: flex;
+    gap: 10px;
 }
 
 

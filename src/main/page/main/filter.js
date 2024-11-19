@@ -92,8 +92,8 @@ const filters = document.querySelector('.filters');
 toggleButton.addEventListener('click', () => {
     filters.classList.toggle('hidden'); // 'hidden' 클래스를 추가/제거
     toggleButton.querySelector('img').src = filters.classList.contains('hidden')
-        ? '../asset/down.png' // 아래로 향하는 아이콘
-        : '../asset/up.png';  // 위로 향하는 아이콘
+        ? '../../asset/down.png' // 아래로 향하는 아이콘
+        : '../../asset/up.png';  // 위로 향하는 아이콘
 });
 
 

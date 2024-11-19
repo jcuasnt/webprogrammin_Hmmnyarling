@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'PFStardust';
+    src: url('../asset/font/PF스타더스트 3.0 S.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'PFStardust', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 기본 스타일 초기화 */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.card-container {
+    width: 80%; /* 검색 창과 동일한 너비 */
+    margin: 20px auto; /* 검색 창과 동일한 중앙 정렬 */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* 카드 개별 스타일 */
+.card {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    min-height: 150px;
+    position: relative;
+}
+
+.card-like {
+    position: absolute; /* 하트를 카드의 절대 위치로 배치 */
+    bottom: 10px; /* 카드의 아래쪽에서 10px 떨어짐 */
+    right: 10px; /* 카드의 오른쪽에서 10px 떨어짐 */
+}
+
+/* 카드 이미지 */
+.card-image {
+    width: 100px;
+    height: 100px;
+    background: #ccc;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+/* 카드 내용 */
+.card-content {
+    flex: 1;
+}
+
+.card-content h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card-content p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.stars img{
+    height: 15px;
+}
+
+/* 태그 버튼 스타일 */
+.tags {
+    margin-top: 10px;
+}
+
+.tag {
+    background-color: #e3e3e3;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+/* 좋아요 버튼 */
+.card-like img {
+    width: 40px;
+    cursor: pointer;
+}
