@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'PFStardust';
+    src: url('../asset/font/PF스타더스트 3.0 S.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'PFStardust', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* 컨테이너 스타일 */
+.search-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* 검색 바 스타일 */
+.search-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+}
+
+.search-bar button {
+    width: 50px;
+    margin-left: 10px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.search-bar img{
+    width: 25px;
+    height: 25px;
+}
+
+
+/* 필터 섹션 스타일 */
+.filters {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding:5px;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+}
+
+.filter label {
+    font-weight: bold;
+    width: 100px;
+    margin-right: 10px;
+}
+
+/* 공통 버튼 스타일 */
+button {
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    transition: background-color 0.2s;
+}
+
+/* 난이도 스타일 */
+.difficulty img {
+    height: 24px;
+    cursor: pointer;
+    transition: background-color 0.2s, border 0.2s;
+    margin-right: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+
+}
+
+.difficulty img:hover {
+    background-color: #e3d1fd;
+}
+
+.difficulty img.selected {
+    height: 24px;
+    background-color: #e3d1fd;
+    border-radius: 5px;
+    box-sizing: content-box;
+}
+
+/* 게임 시간 및 장르 버튼 */
+.genres button,
+.game-time button {
+    background-color: #f8f9fa;
+    padding: 10px;
+    margin-right: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s, border 0.2s;
+}
+
+/* 게임 시간 및 장르 버튼 hover 효과 */
+.genres button:hover,
+.game-time button:hover {
+    background-color: #e3d1fd;
+    border: none;
+}
+
+/* 선택된 버튼 스타일 */
+button.selected {
+    background-color: #e3d1fd;
+    color: #000;
+}
+
+/* 선택된 필터 섹션 */
+.selected-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.selected-filters button {
+    background-color: #6B2CAF;
+    border-color: #5a32a1;
+    color: #ffffff;
+    padding: 5px 10px;
+}
+
+.selected-filters button:hover {
+    background-color: #5a32a1;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #757575;
+    margin: 10px 0;
+}
+
+/* 전체 삭제 버튼 스타일 */
+.clear-filters-button {
+    font-size: 17px;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    /* 필터 박스 내부 오른쪽 아래 정렬 */
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* 필터 섹션 스타일 수정 */
+.filters {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0;
+    max-height: 1000px;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.filters.hidden {
+    max-height: 0;
+    padding: 0;
+    border: none;
+}
+
+
+

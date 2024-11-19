@@ -1,10 +1,4 @@
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 @font-face {
     font-family: 'PFStardust';
     src: url('../asset/font/PF스타더스트 3.0 S.ttf') format('truetype');
@@ -12,7 +6,10 @@
     font-style: normal;
 }
 
-body, button, input, select, textarea {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'PFStardust', sans-serif;
 }
 
