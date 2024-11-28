@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>검색 페이지</title>
+    <link rel="stylesheet" href="../../style/filter.css">
+    <link rel="stylesheet" href="../../style/node.css">
+</head>
+<body>
+<div class="search-container">
+    <div class="search-bar">
+        <label id="search-text">
+            <input type="text" placeholder="검색어를 입력하세요">
+        </label>
+        <div class="right-buttons">
+            <button><img src="../../asset/pixel_search_icon_purple.png" alt="돋보기"></button>
+            <button id="toggleButton"><img src="../../asset/up.png" alt="up"></button>
+        </div>
+    </div>
+
+    <div class="filters">
+        <div class="filter">
+            <label for="num-people">인원 수:</label>
+            <input type="number" id="num-people" placeholder="0">
+        </div>
+
+        <div class="difficulty">
+            <div class="filter">
+                <label>난이도:</label>
+                <div class="difficulty">
+                    <img src="../../asset/star/1star.png" alt="★" class="difficulty-star" data-value="1">
+                    <img src="../../asset/star/2star.png" alt="★★" class="difficulty-star" data-value="2">
+                    <img src="../../asset/star/3star.png" alt="★★★" class="difficulty-star" data-value="3">
+                    <img src="../../asset/star/4star.png" alt="★★★★" class="difficulty-star" data-value="4">
+                    <img src="../../asset/star/5star.png" alt="★★★★★" class="difficulty-star" data-value="5">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="filter">
+            <label>게임 시간:</label>
+            <div class="game-time">
+                <button>5~30m</button>
+                <button>30~60m</button>
+                <button>60m~</button>
+            </div>
+        </div>
+
+        <div class="filter">
+            <label>장르:</label>
+            <div class="genres">
+                <button class="genre-option">추리</button>
+                <button class="genre-option">파티</button>
+                <button class="genre-option">기억력</button>
+                <button class="genre-option">그림</button>
+                <button class="genre-option">마피아</button>
+                <button class="genre-option">카드</button>
+                <button class="genre-option">전략</button>
+                <button class="genre-option">경매</button>
+                <button class="genre-option">협력</button>
+                <button class="genre-option">심리</button>
+                <button class="genre-option">퍼즐</button>
+                <button class="genre-option">단어</button>
+                <button class="genre-option">수학</button>
+                <button class="genre-option">협상</button>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="filter">
+            <label>선택 필터:</label>
+            <div class="selected-filters">
+                <button id="clear-filters" class="clear-filters-button">전체 삭제</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="filter.js"></script>
+    <div class="card-container" id="cardContainer"></div>
+
+<script src="node.js"></script>
+</body>
+</html>
