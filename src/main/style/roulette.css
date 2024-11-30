@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'PFStardust';
+    src: url('../asset/font/PF스타더스트 3.0 S.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'PFStardust', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.roulette-container {
+    margin: 40px auto; /* Increase vertical margin for spacing */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.option-controls {
+    margin-bottom: 40px; /* Increase spacing below the option controls */
+    font-size: 18px;
+}
+
+
+.option-controls button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.option-controls button:hover {
+    background-color: #f0f0f0;
+}
+
+.option-controls span {
+    font-weight: bold;
+}
+
+.roulette-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.roulette {
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+.pointer {
+    position: absolute;
+    top: calc(50% - 240px); /* Adjust pointer above the roulette */
+    left: 50%;
+    transform: translate(-50%, 0); /* Align horizontally */
+    width: 60px; /* Set image width */
+    height: 60px; /* Set image height */
+    background: url("../asset/down.png") no-repeat center; /* Add image */
+    background-size: contain; /* Scale image to fit */
+}
+
+canvas {
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    transition: transform 4s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.options-list {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.options-list input {
+    padding: 5px;
+    font-size: 16px;
+    width: 150px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button-group {
+    margin-top: 20px;
+}
+
+.primary-button, .secondary-button {
+    margin: 10px;
+    padding: 15px 30px; /* 동일한 크기 */
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px; /* 둥근 모서리 */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    width: 150px; /* 동일한 버튼 너비 */
+    height: 50px; /* 동일한 버튼 높이 */
+    display: inline-block;
+    text-align: center;
+}
+
+.primary-button {
+    background-color: #6B2CAF; /* "판 돌리기" 버튼 색상 */
+}
+
+.primary-button:hover {
+    background-color: #5A229F; /* Hover 효과 */
+}
+
+.secondary-button {
+    background-color: #2FFFC4; /* "초기화" 버튼 색상 */
+}
+
+.secondary-button:hover {
+    background-color: #25D9A8; /* Hover 효과 */
+}
+

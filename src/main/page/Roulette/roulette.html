@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>룰렛</title>
+  <link rel="stylesheet" href="../../style/roulette.css">
+</head>
+<body>
+<div class="roulette-container">
+  <div class="option-controls">
+    <label>옵션 개수: </label>
+    <button onclick="updateOptionCount(-1)">-</button>
+    <span id="optionCountDisplay">3</span>
+    <button onclick="updateOptionCount(1)">+</button>
+    <small>(2~6개 선택 가능)</small>
+  </div>
+  <div class="roulette-wrapper">
+    <div class="roulette">
+      <canvas id="rouletteCanvas" width="400" height="400"></canvas>
+      <div class="pointer"></div>
+    </div>
+    <div class="options-list" id="inputsContainer"></div>
+  </div>
+  <div class="button-group">
+    <button class="primary-button" onclick="spinRoulette()">판 돌리기</button>
+    <button class="secondary-button" onclick="resetRoulette()">초기화</button>
+  </div>
+</div>
+<script src="roulette.js"></script>
+</body>
+</html>
