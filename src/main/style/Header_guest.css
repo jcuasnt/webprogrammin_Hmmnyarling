@@ -13,7 +13,7 @@
     font-family: 'PFStardust', sans-serif;
 }
 
-header {
+.header {
     background-color: #ffffff;
     padding: 5px 0;
     position: fixed;
@@ -23,6 +23,7 @@ header {
     z-index: 1000;
     border-bottom: 2px solid;
     border-color: #6B2CAF;
+    margin-top: 80px;
 }
 
 .header-container {
@@ -39,7 +40,7 @@ header {
 }
 
 .login_btn {
-    font-size: 20px;
+    font-size: 15px;
     color: white;
     border: none;
     background-color: #6B2CAF;

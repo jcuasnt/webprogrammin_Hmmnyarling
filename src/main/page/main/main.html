@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>검색 페이지</title>
-    <link rel="stylesheet" href="../../style/filter.css">
-    <link rel="stylesheet" href="../../style/node.css">
+    <link rel="stylesheet" href="/src/main/style/filter.css">
+    <link rel="stylesheet" href="/src/main/style/node.css">
 </head>
 <body>
+<div id="header"></div>
+
 <div class="search-container">
     <div class="search-bar">
         <label id="search-text">
@@ -22,7 +24,7 @@
     <div class="filters">
         <div class="filter">
             <label for="num-people">인원 수:</label>
-            <input type="number" id="num-people" placeholder="0">
+            <input type="number" id="num-people">
         </div>
 
         <div class="difficulty">
@@ -79,10 +81,12 @@
     </div>
 </div>
 
-    <script src="filter.js"></script>
+    <script src="/src/main/page/main/filter.js"></script>
     <div class="card-container" id="cardContainer"></div>
 
-<script src="node.js"></script>
-<script src="search.js"></script>
+<script src="/src/main/page/main/node.js"></script>
+<script src="/src/main/page/main/search.js"></script>
+<script src="/src/main/component/Header.js"></script>
+
 </body>
 </html>

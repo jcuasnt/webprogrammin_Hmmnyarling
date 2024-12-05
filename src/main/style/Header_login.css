@@ -10,6 +10,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'PFStardust', sans-serif;
+    z-index: 1000;
 }
 
 
@@ -20,9 +21,9 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1000;
     border-bottom: 2px solid;
     border-color: #6B2CAF;
+    margin-top: 30px;
 }
 
 .header-container {
@@ -63,7 +64,7 @@ header {
 }
 
 .login_btn {
-    font-size: 16px;
+    font-size: 15px;
     color: white;
     border: none;
     background-color: #6B2CAF;

@@ -6,11 +6,13 @@
 }
 
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'PFStardust', sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
     background-color: #f9f9f9;
     margin: 0;
     padding: 0;
@@ -18,8 +20,10 @@ body {
 
 /* 컨테이너 스타일 */
 .search-container {
+    margin-top: 50px;
     width: 80%;
-    margin: 20px auto;
+    margin-left: auto;
+    margin-right: auto;
     padding: 20px;
     background: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
